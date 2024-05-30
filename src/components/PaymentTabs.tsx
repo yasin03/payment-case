@@ -19,7 +19,7 @@ const PaymentTabs: React.FC = () => {
           }`}
           onClick={() => setActiveTab("creditCard")}
         >
-          <CiCreditCard1 />
+          <CiCreditCard1 size={26} />
           Kredi Kartı
         </button>
         <button
@@ -30,7 +30,7 @@ const PaymentTabs: React.FC = () => {
           } rounded-full`}
           onClick={() => setActiveTab("transfer")}
         >
-          <CiMoneyBill />
+          <CiMoneyBill size={26} />
           Havale
         </button>
       </div>
