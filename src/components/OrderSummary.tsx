@@ -6,7 +6,6 @@ interface OrderSummaryProps {
 }
 
 const OrderSummary: React.FC<OrderSummaryProps> = ({ totalPrice, tax }) => {
-  const discount = 0; // İndirim miktarı, şu an için sıfır varsayıldı
 
   return (
     <div className="bg-white text-gray-600">
@@ -21,10 +20,9 @@ const OrderSummary: React.FC<OrderSummaryProps> = ({ totalPrice, tax }) => {
         <span>KDV ( %20 )</span>
         <span>{tax.toFixed(2)}</span>
       </div>
-      <hr className="my-2" />
       <div className="flex justify-between mb-2 px-4 py-3 border m-2 font-bold">
         <span>TOPLAM TUTAR</span>
-        <span>{(totalPrice + tax - discount).toFixed(2)}</span>
+        <span>{(totalPrice + tax).toFixed(2)}</span>
       </div>
     </div>
   );

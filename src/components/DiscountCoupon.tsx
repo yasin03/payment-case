@@ -12,6 +12,7 @@ const DiscountCoupon: React.FC<DiscountCouponProps> = ({ applyCoupon }) => {
   const handleApplyCoupon = () => {
     applyCoupon(couponCode);
     setCouponCode("");
+    setIsExpanded(!isExpanded);
   };
 
   const toggleExpand = () => {

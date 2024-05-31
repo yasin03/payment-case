@@ -11,7 +11,7 @@ const CreditCardForm: React.FC = () => {
   const [focus, setFocus] = useState<"name" | "number" | "expiry" | "cvc">();
 
   return (
-    <div className="flex justify-between items-center space-x-8 ">
+    <div className="flex flex-col-reverse md:flex-row justify-between items-center space-x-8 ">
       <form className="space-y-4 w-full ">
         <CustomInput
           id="name"
@@ -52,7 +52,7 @@ const CreditCardForm: React.FC = () => {
           habipagca@hotmail.com
         </p>
       </form>
-      <div>
+      <div className="my-6">
         <Cards
           cvc={cvv}
           expiry={expiry}

@@ -12,7 +12,7 @@ const PaymentTabs: React.FC = () => {
     <div className="">
       <div className="w-full flex justify-center space-x-4 mb-6">
         <button
-          className={`py-2 px-4 w-full rounded-full flex items-center gap-x-2 ${
+          className={`py-2 px-4 w-full rounded-full flex items-center gap-x-2 shadow-lg ${
             activeTab === "creditCard"
               ? "bg-blue-700 text-white"
               : "bg-gray-200 text-gray-700"
@@ -23,7 +23,7 @@ const PaymentTabs: React.FC = () => {
           Kredi Kartı
         </button>
         <button
-          className={`py-2 px-4 w-full rounded-full flex items-center gap-x-2 ${
+          className={`py-2 px-4 w-full rounded-full flex items-center gap-x-2 shadow-lg ${
             activeTab === "transfer"
               ? "bg-blue-700 text-white"
               : "bg-gray-200 text-gray-700"
